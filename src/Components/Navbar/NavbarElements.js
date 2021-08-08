@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const Nav = styled.div`
+    background: ${({ changeNav }) => changeNav ? '#101010' : 'transparent'};
     height: 80px;
-    background: #101010;
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-top: -80px;
+    margin-top: -80px;
     position: sticky;
     top: 0;
     z-index: 10;
