@@ -42,6 +42,10 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (max-width: 480px) {
+        margin-top: -20px;
+    }
 `;
 
 export const HeroBg = styled.div`
@@ -75,7 +79,7 @@ export const HeroH2 = styled.h2`
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 32px;
+        font-size: 36px;
     }
 `;
 
@@ -95,7 +99,7 @@ export const HeroText = styled.p`
     }
 
     @media screen and (max-width: 580px) {
-        font-size: 28px;
+        font-size: 32px;
     }
 `;
 
