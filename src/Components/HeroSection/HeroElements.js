@@ -12,12 +12,25 @@ const spinAnimate = props => css`${spin} 8s infinite`;
 
 export const HeroContainer = styled.div`
     background: #101010;
-    height: 700px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
+
+    :before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%),
+            linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 100%);
+        z-index: 2;
+    }
 `;
 
 export const HeroContent = styled.div`
@@ -25,7 +38,7 @@ export const HeroContent = styled.div`
     max-width: 1200px;
     position: absolute;
     padding: 6px 20px;
-    margin-top: -20px;
+    margin-top: -80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +58,7 @@ export const HeroBg = styled.div`
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 `;
 
@@ -53,6 +67,7 @@ export const HeroH2 = styled.h2`
     font-family: 'Josefin Sans', sans-serif;
     color: rgba(255,255,255,0.78);
     font-weight: 300;
+    text-align: center;
     letter-spacing: 0.01em;
 
     @media screen and (max-width: 768px) {
@@ -66,6 +81,7 @@ export const HeroH2 = styled.h2`
 
 export const HeroText = styled.p`
     display: flex;
+    text-align: center;
     align-items: center;
     font-size: 51px;
     font-family: 'Josefin Sans', sans-serif;
@@ -89,7 +105,7 @@ export const HeroSpecial = styled.p`
     white-space: nowrap;
     padding: 6px 10px;
     font-weight: 400;
-    background: linear-gradient(90deg, rgba(56, 224, 235, 0.35) 0%, rgba(31, 234, 234, 0.3) 100%);
+    background: linear-gradient(90deg, rgba(56, 224, 235, 0.54) 0%, rgba(58, 239, 239, 0.21) 92.71%);
     border-radius: 8px;
     cursor: pointer;
 

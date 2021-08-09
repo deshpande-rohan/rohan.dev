@@ -2,15 +2,13 @@ import React from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH2, HeroText, HeroSpecial, HeroBtnWrapper, EarthIcon } from './HeroElements';
 import { Button } from '../../ButtonElement';
 import Typewriter from 'typewriter-effect';
-import video from '../../Videos/black.mp4';
+import video from '../../Videos/back.mp4';
 
 const HeroSection = () => {
-
-
     return (
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg loop muted autoplay src={video} type="video/mp4" />
+                <VideoBg loop muted autoPlay src={video} type="video/mp4" />
             </HeroBg>
             <HeroContent>
                 <HeroH2>Rohan Deshpande</HeroH2>
@@ -31,7 +29,7 @@ const HeroSection = () => {
                     </HeroSpecial>
                 </HeroText>
                 <HeroBtnWrapper>
-                    <Button to="about" sharpBlack={true} dark={true} normalFont={true} normalPadding={true} animated={true} rounded={false}>
+                    <Button to="about" black={true} dark={true} normal_font={true} normal_padding={true} animated={true} rounded={false}>
                         Explore <EarthIcon className="earthIcon" />
                     </Button>
                 </HeroBtnWrapper>
