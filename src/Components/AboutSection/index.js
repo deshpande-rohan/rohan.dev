@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutContainer, AboutWrapper, ImageSection, ImageWrapper, Image, AboutSection, H2, Info, P, SocialSection, SocialBox, SocialIcon } from './AboutElements';
+import { AboutContainer, AboutWrapper, ImageSection, ImageWrapper, Image, AboutSection, H2, Info, P, SocialSection } from './AboutElements';
 import myImage from '../../Images/me.jpg';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
