@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Sidebar from './Components/Sidebar';
 import HeroSection from './Components/HeroSection';
 import About from './Components/AboutSection';
+import StackSection from './Components/StackSection';
 
 const App = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,7 @@ const App = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <HeroSection />
             <About />
+            <StackSection />
         </>
     );
 }
