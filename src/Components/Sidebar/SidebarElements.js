@@ -27,6 +27,7 @@ export const Icon = styled.div`
     font-size: 2rem;
     cursor: pointer;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 `;
 
 export const CloseIcon = styled(FaTimes)`

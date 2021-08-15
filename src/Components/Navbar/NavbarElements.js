@@ -66,6 +66,7 @@ export const MobileIcon = styled.div`
         font-size: 1.6rem;
         cursor: pointer;
         color: #fff;
+        -webkit-tap-highlight-color: transparent;
     }
 `;
 

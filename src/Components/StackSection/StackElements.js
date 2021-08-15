@@ -60,7 +60,7 @@ export const StackInfo = styled.div`
     }
 
     @media only screen and (max-width: 600px) {
-        align-items: flex-start;
+        align-items: center;
         margin-top: 10px;
     }
 `;
@@ -94,7 +94,8 @@ export const StackHouse = styled.div`
     @media only screen and (max-width: 600px) {
         grid-template-columns: repeat(4, minmax(80px, 1fr));
         grid-template-rows: repeat(5, minmax(100px, 1fr));
-        grid-gap: 10px;
+        grid-gap: 8px;
+        padding: 7px 3px;
     }
 `;
 
@@ -119,12 +120,17 @@ export const StackIcon = styled.div`
     color: #FB5E06;
     background: #101010;
     border-radius: 100%;
-    box-shadow: 4px 2px 11px 1px #000000, -5px -4px 10px rgba(255, 255, 255, 0.08);
+    box-shadow: 6px 5px 20px 1px #000000, -5px -5px 10px rgba(255, 255, 255, 0.08);
     cursor: pointer;
     transition: transform 0.3s cubic-bezier(.17,.67,.49,.98);
+    -webkit-tap-highlight-color: transparent;
 
     &:hover {
         transform: scale(1.05);
+    }
+
+    &:hover .icon {
+        filter: saturate(100%);
     }
 
     &.true {
@@ -151,6 +157,7 @@ export const StackIcon = styled.div`
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s, transform 0.2s;
+        -webkit-tap-highlight-color: transparent;
     }
 
     &.true:hover::after {
@@ -176,6 +183,7 @@ export const Icon = styled.img`
     width: 38px;
     height: 38px;
     background-size: cover;
+    filter: saturate(82%);
     transition: all .3s ease-in;
 
     @media only screen and (max-width: 600px) {
@@ -186,7 +194,7 @@ export const Icon = styled.img`
 
 export const StackName = styled.p`
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
 
     @media only screen and (max-width: 600px) {
