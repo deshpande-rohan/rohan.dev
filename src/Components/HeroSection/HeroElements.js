@@ -101,6 +101,10 @@ export const HeroText = styled.p`
     @media screen and (max-width: 580px) {
         font-size: 32px;
     }
+
+    @media screen and (max-width: 460px) {
+        font-size: 28px;
+    }
 `;
 
 export const HeroSpecial = styled.p`

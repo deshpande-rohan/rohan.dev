@@ -93,9 +93,16 @@ export const StackHouse = styled.div`
 
     @media only screen and (max-width: 600px) {
         grid-template-columns: repeat(4, minmax(80px, 1fr));
-        grid-template-rows: repeat(5, minmax(100px, 1fr));
+        grid-template-rows: repeat(4, minmax(100px, 1fr));
         grid-gap: 8px;
         padding: 7px 3px;
+    }
+
+    @media only screen and (max-width: 460px) {
+        grid-template-columns: repeat(4, minmax(70px, 1fr));
+        grid-template-rows: repeat(4, minmax(90px, 1fr));
+        grid-gap: 6px;
+        padding: 5px 2px;
     }
 `;
 
@@ -177,18 +184,27 @@ export const StackIcon = styled.div`
         min-height: 55px;
         margin-bottom: 10px;
     }
+
+    @media only screen and (max-width: 460px) {
+        width: 52px;
+    }
 `;
 
 export const Icon = styled.img`
     width: 38px;
     height: 38px;
     background-size: cover;
-    filter: saturate(82%);
+    filter: saturate(70%);
     transition: all .3s ease-in;
 
     @media only screen and (max-width: 600px) {
         width: 36px;
         height: 36px;
+    }
+
+    @media only screen and (max-width: 460px) {
+        width: 34px;
+        height: 34px;
     }
 `;
 
@@ -199,6 +215,10 @@ export const StackName = styled.p`
 
     @media only screen and (max-width: 600px) {
         font-size: 11px;
+    }
+
+    @media only screen and (max-width: 460px) {
+        font-size: 10px;
     }
 `;
 
@@ -219,7 +239,12 @@ export const LaptopImage = styled.img`
     }
 
     @media only screen and (max-width: 600px) {
-        width: 75%;
-        height: 75%;
+        width: 70%;
+        height: 70%;
+    }
+
+    @media only screen and (max-width: 460px) {
+        width: 90%;
+        height: 90%;
     }
 `;
