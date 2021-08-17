@@ -186,7 +186,8 @@ export const StackIcon = styled.div`
     }
 
     @media only screen and (max-width: 460px) {
-        width: 52px;
+        width: 53px;
+        min-height: 53px;
     }
 `;
 
@@ -194,7 +195,7 @@ export const Icon = styled.img`
     width: 38px;
     height: 38px;
     background-size: cover;
-    filter: saturate(70%);
+    filter: saturate(75%);
     transition: all .3s ease-in;
 
     @media only screen and (max-width: 600px) {
@@ -203,8 +204,8 @@ export const Icon = styled.img`
     }
 
     @media only screen and (max-width: 460px) {
-        width: 34px;
-        height: 34px;
+        width: 33px;
+        height: 33px;
     }
 `;
 

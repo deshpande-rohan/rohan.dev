@@ -65,6 +65,11 @@ export const Data = [
         iconPath: 'bash'
     },
     {
+        skillName: 'Figma',
+        isLearning: false,
+        iconPath: 'figma'
+    },
+    {
         skillName: 'Vercel',
         isLearning: false,
         iconPath: 'vercel'
