@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const Nav = styled.div`
-    background: ${({ scrollNav }) => scrollNav ? '#101010' : 'transparent'};
+    background: ${({ scrollNav }) => scrollNav ? 'rgba(16, 16, 16, 0.75)' : 'transparent'};
     height: 80px;
     display: flex;
     justify-content: center;
@@ -11,6 +11,8 @@ export const Nav = styled.div`
     position: sticky;
     top: 0;
     z-index: 10;
+    -webkit-backdrop-filter: ${({ scrollNav }) => scrollNav ? 'blur(10px)' : 'none'};
+    backdrop-filter: ${({ scrollNav }) => scrollNav ? 'blur(10px)' : 'none'};
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -37,6 +39,7 @@ export const NavHeader = styled.p`
     align-items: center;
     letter-spacing: 2px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 
     @media only screen and (max-width: 768px) {
         margin-left: 16px;

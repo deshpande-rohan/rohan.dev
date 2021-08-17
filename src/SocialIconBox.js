@@ -14,6 +14,7 @@ export const SocialIconBox = styled.a`
     border-radius: ${({ rounded }) => rounded ? '100%' : '15px'};
     box-shadow: ${({ dark }) => dark ? 'none' : 'inset -2px -2px 5px rgba(255, 255, 255, 0.55), inset 2px 2px 5px rgba(0, 0, 0, 0.21)'};
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     transition: all .3s ease-out;
 
     &:not(:last-child) {

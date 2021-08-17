@@ -16,6 +16,7 @@ export const Button = styled(Link)`
     justify-content: center;
     align-items: center;
     box-shadow: ${({ animated }) => animated ? 'inset 0 0 0 0 rgba(255, 255, 255, 0.6)' : 'none'};
+    -webkit-tap-highlight-color: transparent;
     transition: all .5s cubic-bezier(.05,.33,.56,.92);
 
     &:hover {

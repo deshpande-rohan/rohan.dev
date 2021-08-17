@@ -64,6 +64,7 @@ export const SidebarLink = styled(Link)`
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     transition: all 0.2s ease-in-out;
 
     &:hover {
@@ -74,6 +75,7 @@ export const SidebarLink = styled(Link)`
 export const SidebarBtn = styled.div`
     display: flex;
     justify-content: center;
+    -webkit-tap-highlight-color: transparent;
 `;
 
 export const SideBtn = styled(Link)`
@@ -87,10 +89,14 @@ export const SideBtn = styled(Link)`
     border: none;
     outline: none;
     cursor: pointer;  
+    box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.11), 8px 8px 15px #000000;
     transition: all .3s ease-in-out;
 
     &:hover {
-        color: rgba(255,255,255,0.92);
-        box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.11), 8px 8px 15px #000000;
+        color: rgba(255,255,255,0.92);  
+    }
+
+    &:active {
+        transform: translateY(10px);
     }
 `;
