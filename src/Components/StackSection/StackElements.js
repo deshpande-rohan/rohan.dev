@@ -145,6 +145,7 @@ export const StackIcon = styled.div`
         animation-name: ${blinkAnimation};
         animation-duration: 4s;
         animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 
     &.true::after {
