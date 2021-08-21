@@ -1,6 +1,5 @@
 import React from 'react'
 import { ProjectsContainer, Title, ProjectsWrapper, ProjectCard, ProjectInfo, ProjectTitle, ProjectBio, ProjectDescription, ProjectStack, StackItem, ProjectLink, ProjectImage, Image } from './ProjectElements'
-import projectImg from '../../Images/project-1.png'
 import { BsCodeSlash, BsArrowUpRight } from 'react-icons/bs'
 import { Data } from './Data'
 
