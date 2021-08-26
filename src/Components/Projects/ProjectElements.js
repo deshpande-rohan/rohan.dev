@@ -206,3 +206,25 @@ export const Image = styled.img`
     }
 `;
 
+export const Text = styled.p`
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 2.8rem;
+    background: linear-gradient(90deg, rgba(148, 230, 235, 0.45) 0%, rgba(58, 211, 244, 0.62) 99.48%);
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover {
+        transform: translateY(-6px) scale(1.03);
+    }
+
+    @media only screen and (max-width: 480px) {
+        font-size: 1.2rem;
+        margin-top: 2.2rem;
+    }
+`;
+

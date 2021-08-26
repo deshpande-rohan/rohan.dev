@@ -11,8 +11,8 @@ export const Nav = styled.div`
     position: sticky;
     top: 0;
     z-index: 10;
-    -webkit-backdrop-filter: ${({ scrollNav }) => scrollNav ? 'blur(10px)' : 'none'};
-    backdrop-filter: ${({ scrollNav }) => scrollNav ? 'blur(10px)' : 'none'};
+    -webkit-backdrop-filter: ${({ scrollNav }) => scrollNav ? 'blur(10px) saturate(300%)' : 'none'};
+    backdrop-filter: ${({ scrollNav }) => scrollNav ? 'blur(10px) saturate(300%)' : 'none'};
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
