@@ -6,6 +6,7 @@ import HeroSection from './Components/HeroSection';
 import About from './Components/AboutSection';
 import StackSection from './Components/StackSection';
 import Projects from './Components/Projects';
+import Contact from './Components/Contact';
 
 const App = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,7 @@ const App = () => {
             <About />
             <StackSection />
             <Projects />
+            <Contact />
         </>
     );
 }
