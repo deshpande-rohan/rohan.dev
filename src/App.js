@@ -1,27 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
-import Navbar from './Components/Navbar';
-import Sidebar from './Components/Sidebar';
-import HeroSection from './Components/HeroSection';
-import About from './Components/AboutSection';
-import StackSection from './Components/StackSection';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
+import Home from './Pages/index'
+import Message from './Pages/message'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const App = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
-
     return (
-        <>
-            <Navbar toggle={toggle} />
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <HeroSection />
-            <About />
-            <StackSection />
-            <Projects />
-            <Contact />
-        </>
+        <Router>
+            <Switch>
+                <Route path="/" component={Home} exact />
+                <Route path="/contact" component={Message} exact />
+            </Switch>
+        </Router>
     );
 }
 

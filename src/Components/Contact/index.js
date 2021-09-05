@@ -1,12 +1,13 @@
 import React from 'react'
-import { ContactSection, ContactWrapper, ImageContainer, ContactImage, ContactText, HeadPrimary, HeadSecondary, ContactButton } from './ContactElements'
+import { ContactSection, ContactWrapper, ImageContainer, ContactImage, ContactText, HeadPrimary, HeadSecondary } from './ContactElements'
 import workTogether from '../../Images/workTogether.svg'
-import { VscTools } from 'react-icons/vsc'
+import { VscTools } from 'react-icons/vsc';
+import { ButtonNavigate } from '../../ButtonElement';
 
 const Contact = () => {
     return (
         <>
-            <ContactSection>
+            <ContactSection id="contact">
                 <ContactWrapper>
                     <ImageContainer>
                         <ContactImage src={workTogether} alt="Work Together" />
@@ -18,7 +19,7 @@ const Contact = () => {
                         <HeadSecondary>
                             Send me an Email and let’s work together <VscTools className="tools" />
                         </HeadSecondary>
-                        <ContactButton>Let's build Together !</ContactButton>
+                        <ButtonNavigate to="/contact" darkBg={false} rounded={false} bold={false} slighBigFont={false} >Let's build Together !</ButtonNavigate>
                     </ContactText>
                 </ContactWrapper>
             </ContactSection>

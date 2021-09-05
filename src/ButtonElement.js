@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import { Link as LinkRouter } from 'react-router-dom'
 
 export const Button = styled(Link)`
     font-family: 'Josefin Sans', sans-serif;
@@ -11,6 +12,7 @@ export const Button = styled(Link)`
     padding: ${({ normal_padding }) => normal_padding ? '12px 24px' : '15px 26px'};
     outline: none;
     border: none;
+    text-decoration: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -25,3 +27,25 @@ export const Button = styled(Link)`
     }
 `;
 
+export const ButtonNavigate = styled(LinkRouter)`
+    background-image: ${({ darkBg }) => darkBg ? 'linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)' : 'linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%)'};
+    display: block;    
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: ${({ slightBigFont }) => slightBigFont ? '20px' : '18px'};
+    font-weight: ${({ bold }) => bold ? '500' : '400'};
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white; 
+    text-decoration: none;
+    border-radius: ${({ rounded }) => rounded ? '50px' : '8px'};
+
+    &:hover {
+        background-position: right center; /* change the direction of the change here */
+    }
+
+    &:active {
+        transform: scale(0.95) translateY(5px);
+    }
+`;

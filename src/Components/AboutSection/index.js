@@ -8,7 +8,7 @@ import { SocialIconBox } from '../../SocialIconBox';
 const About = () => {
     return (
         <>
-            <AboutContainer>
+            <AboutContainer id="about">
                 <AboutWrapper>
                     <ImageSection>
                         <ImageWrapper>

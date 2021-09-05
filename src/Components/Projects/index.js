@@ -8,7 +8,7 @@ const Projects = () => {
 
     return (
         <>
-            <ProjectsContainer>
+            <ProjectsContainer id="projects">
                 <Title>Projects <BsCodeSlash style={{ transform: 'translateY(9px)', color: 'rgba(0,0,0,0.5)' }} /></Title>
                 <ProjectsWrapper>
                     {

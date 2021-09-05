@@ -101,25 +101,3 @@ export const HeadSecondary = styled.h4`
         font-size: 18px;
     }
 `;
-
-export const ContactButton = styled.button`
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    background: linear-gradient(90.27deg, #61E87F 3.75%, rgba(132, 244, 177, 0.42) 99.77%);
-    color: rgba(255, 255, 255, 0.85);
-    padding: 8px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out; 
-
-    @media only screen and (max-width: 490px) {
-        font-size: 16px;
-    }
-
-    &:active {
-        transform: scale(0.90);
-    }
-`;

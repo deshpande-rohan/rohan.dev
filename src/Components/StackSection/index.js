@@ -6,7 +6,7 @@ import LaptopSVG from '../../Images/workLife.svg';
 const StackSection = () => {
     return (
         <>
-            <StackContainer>
+            <StackContainer id="skills">
                 <StackWrapper>
                     <StackInfo>
                         <StackHeading>My Skills / Stack</StackHeading>

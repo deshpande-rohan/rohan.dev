@@ -29,7 +29,7 @@ const HeroSection = () => {
                     </HeroSpecial>
                 </HeroText>
                 <HeroBtnWrapper>
-                    <Button to="about" black={true} dark={true} normal_font={true} normal_padding={true} animated={true} rounded={false}>
+                    <Button to="about" black={true} dark={true} normal_font={true} normal_padding={true} animated={true} rounded={false} smooth={true} duration={500} spy={true} exact='true' offset={20}>
                         Explore <EarthIcon className="earthIcon" />
                     </Button>
                 </HeroBtnWrapper>

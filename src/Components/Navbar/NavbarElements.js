@@ -101,46 +101,12 @@ export const NavLink = styled(Link)`
     cursor: pointer;
     transition: all .2s ease-out;
 
-    &:active {
-        border-bottom: 2px solid red;
+    &.active {
+        background-color: rgba(255, 255, 255, .03);
+        border-bottom: 4px solid red;
     }
 
     &:hover {
         color: cyan;
-        border-bottom: 4px solid red;
-        background-color: rgba(255, 255, 255, .03);
     }
 `;
-
-export const NavBtn = styled.div`
-    width: 150px;
-    max-width: 160px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #101010;
-    border-radius: 50px;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-        box-shadow: -4px -5px 30px rgba(18, 158, 133, 0.64), 8px 4px 13px #101010;
-    }
-
-    @media only screen and (max-width: 768px) {
-        display: none;
-    }
-`;
-
-export const NavBtnLink = styled(Link)`
-    color: rgba(255, 255, 255, 0.72);
-    font-weight: 500;
-    font-size: 1.3rem;
-    transition: color .2s ease-in;
-
-    &:hover {
-        color: rgba(255, 255, 255, 0.80);
-    }
-`;
-
