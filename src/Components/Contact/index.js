@@ -19,7 +19,7 @@ const Contact = () => {
                         <HeadSecondary>
                             Send me an Email and let’s work together <VscTools className="tools" />
                         </HeadSecondary>
-                        <ButtonNavigate to="/contact" darkBg={false} rounded={false} bold={false} slighBigFont={false} >Let's build Together !</ButtonNavigate>
+                        <ButtonNavigate to="/contact" darkBg={false} rounded={false} bold={false} slighBigFont={false} mediaSupport={false}>Let's build Together !</ButtonNavigate>
                     </ContactText>
                 </ContactWrapper>
             </ContactSection>

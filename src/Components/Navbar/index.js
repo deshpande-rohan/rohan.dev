@@ -44,7 +44,7 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
 
-                    <ButtonNavigate to="/contact" darkBg={true} rounded={true} bold={true} slightBigFont={true} >Contact Me</ButtonNavigate>
+                    <ButtonNavigate to="/contact" darkBg={true} rounded={true} bold={true} slightBigFont={true} mediaSupport={true}>Contact Me</ButtonNavigate>
                 </NavbarContainer>
             </Nav>
         </>

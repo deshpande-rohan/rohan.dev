@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.div`
     background: ${({ scrollNav }) => scrollNav ? 'rgba(16, 16, 16, 0.75)' : 'transparent'};
@@ -89,7 +90,7 @@ export const NavItem = styled.li`
     height: 80px;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(LinkS)`
     color: #fff;
     font-size: 1.1rem;
     font-weight: 400;
@@ -110,3 +111,37 @@ export const NavLink = styled(Link)`
         color: cyan;
     }
 `;
+
+export const NavBtn = styled.div`
+    width: 150px;
+    max-width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: -4px -5px 30px rgba(18, 158, 133, 0.64), 8px 4px 13px #101010;
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavBtnLink = styled(LinkR)`
+    color: rgba(255, 255, 255, 0.72);
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: color .2s ease-in;
+    text-decoration: none;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.80);
+    }
+`;
+

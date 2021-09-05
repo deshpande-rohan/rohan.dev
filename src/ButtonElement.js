@@ -48,4 +48,8 @@ export const ButtonNavigate = styled(LinkRouter)`
     &:active {
         transform: scale(0.95) translateY(5px);
     }
+
+    @media only screen and (max-width: 768px) {
+        display: ${({ mediaSupport }) => mediaSupport ? 'none' : 'block'};
+    }
 `;
