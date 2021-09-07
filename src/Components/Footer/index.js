@@ -18,7 +18,7 @@ const Footer = () => {
                             <LinkRoute to="/contact">Contact</LinkRoute>
                         </LinkSection>
                         <LinkSection>
-                            <SectionTitle>This Website uses</SectionTitle>
+                            <SectionTitle>Made With</SectionTitle>
                             <Link>React</Link>
                             <Link>Styled Components</Link>
                             <Link>React Router</Link>

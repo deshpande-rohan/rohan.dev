@@ -44,12 +44,14 @@ export const FooterHead = styled.div`
     & > img {
         width: 44px;
         height: 44px;
-        margin: 2px 10px;
+        margin: 2px 10px 2px 0;
         cursor: pointer;
 
         @media only screen and (max-width: 520px) {
-            width: 38px;
-            height: 38px;
+            width: 34px;
+            height: 34px;
+            transform: translateY(-4px);
+            margin: 2px 6px 2px 0;
         }
     }
 
@@ -66,7 +68,7 @@ export const Name = styled.h2`
     color: rgba(255, 255, 255, 0.65);
 
     @media only screen and (max-width: 520px) {
-        font-size: 1.50rem;
+        font-size: 1.20rem;
     }
 `;
 
@@ -85,9 +87,9 @@ export const LinksWrapper = styled.div`
     }
 
     @media only screen and (max-width: 520px) {
-        grid-template-columns: repeat(2, minmax(160px, 180px));
+        grid-template-columns: repeat(2, minmax(140px, 180px));
         grid-template-rows: repeat(2, 230px);
-        grid-row-gap: 1.5rem;
+        grid-row-gap: 0.5rem;
         grid-column-gap: 0;
     }
 `;
@@ -106,6 +108,7 @@ export const SectionTitle = styled.h2`
     font-weight: 500;
     color: rgba(255, 255, 255, 0.70);
     cursor: pointer;
+    white-space: nowrap;
     margin-bottom: 16px;
     transition: .3s;
 
@@ -114,14 +117,14 @@ export const SectionTitle = styled.h2`
     }
 
     @media only screen and (max-width: 520px) {
-        font-size: 1.1rem;
-        margin-bottom: 13px;
+        font-size: 1rem;
+        margin-bottom: 12px;
     }
 `;
 
 export const Link = styled(LinkScroll)`
     display: inline-block;
-    padding: 4px 0;
+    padding: 2px 0;
     font-size: 1rem;
     text-decoration: none;
     font-weight: 400;
@@ -181,7 +184,6 @@ export const Tip = styled.p`
     & span {
         display: inline-block;
         font-size: 1.1rem;
-        background: rgba(255, 255, 255, 0.4);
         padding: 4px 6px;
         border-radius: 2px;
         white-space: nowrap;
@@ -196,6 +198,7 @@ export const Tip = styled.p`
 
         @media only screen and (max-width: 520px) {
             font-size: 1rem;
+            padding: 3px;
         }
     }
 
