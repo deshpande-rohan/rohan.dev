@@ -18,6 +18,7 @@ export const HeroContainer = styled.div`
     align-items: center;
     position: relative;
     z-index: 1;
+    -webkit-tap-hightlight-color: transparent;
 
     :before {
         content: '';
@@ -35,13 +36,13 @@ export const HeroContainer = styled.div`
 
 export const HeroContent = styled.div`
     z-index: 3;
-    max-width: 1200px;
     position: absolute;
     padding: 6px 20px;
-    margin-top: -80px;
+    margin-top: -40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     @media only screen and (max-width: 480px) {
         margin-top: -20px;
@@ -67,7 +68,7 @@ export const VideoBg = styled.video`
 `;
 
 export const HeroH2 = styled.h2`
-    font-size: 50px;
+    font-size: 46px;
     font-family: 'Josefin Sans', sans-serif;
     color: rgba(255,255,255,0.78);
     font-weight: 300;
@@ -87,7 +88,7 @@ export const HeroText = styled.p`
     display: flex;
     text-align: center;
     align-items: center;
-    font-size: 51px;
+    font-size: 48px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     margin-top: 30px;
@@ -103,7 +104,7 @@ export const HeroText = styled.p`
     }
 
     @media screen and (max-width: 460px) {
-        font-size: 28px;
+        font-size: 25px;
     }
 `;
 
@@ -113,7 +114,8 @@ export const HeroSpecial = styled.p`
     white-space: nowrap;
     padding: 6px 10px;
     font-weight: 400;
-    background: linear-gradient(90deg, rgba(56, 224, 235, 0.54) 0%, rgba(58, 239, 239, 0.21) 92.71%);
+    background: rgb(54,232,218);
+    background: linear-gradient(144deg, rgba(54,232,218,0.5886729691876751) 0%, rgba(127,218,247,0.6138830532212884) 100%);    
     border-radius: 8px;
     cursor: pointer;
 
@@ -127,6 +129,10 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (max-width: 480px) {
+        margin-top: 46px;
+    }
 `;
 
 export const EarthIcon = styled(ImEarth)`

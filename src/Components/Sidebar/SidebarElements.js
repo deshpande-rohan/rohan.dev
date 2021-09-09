@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+import { Link as LinkScroll } from 'react-scroll';
+import { Link as LinkRouter } from 'react-router-dom';
+
 
 export const SidebarContainer = styled.div`
     position: fixed;
@@ -56,19 +58,22 @@ export const SidebarMenu = styled.ul`
     }
 `;
 
-export const SidebarLink = styled(Link)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+export const SidebarLink = styled(LinkScroll)`
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 16px;
     font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
+    border-radius: 4px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     transition: all 0.2s ease-in-out;
 
     &:hover {
         color: cyan;
+        background-color: rgba(255, 255, 255, 0.1);
     }
 `;
 
@@ -78,7 +83,7 @@ export const SidebarBtn = styled.div`
     -webkit-tap-highlight-color: transparent;
 `;
 
-export const SideBtn = styled(Link)`
+export const SideBtn = styled(LinkRouter)`
     color: rgba(255,255,255,0.72);
     font-size: 1.6rem;
     font-weight: 500;
@@ -86,6 +91,7 @@ export const SideBtn = styled(Link)`
     background-color: #101010;
     padding: 12px 24px;
     border-radius: 50px;
+    text-decoration: none;
     border: none;
     outline: none;
     cursor: pointer;  
