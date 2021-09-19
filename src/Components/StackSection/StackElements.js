@@ -102,7 +102,7 @@ export const StackHouse = styled.div`
     grid-template-columns: repeat(4, minmax(70px, 1fr));
     grid-template-rows: repeat(4, minmax(90px, 1fr));
     grid-gap: 6px;
-    padding: 5px 2px;
+    padding: 4px 2px;
   }
 `;
 
@@ -116,7 +116,6 @@ export const StackCard = styled.div`
 `;
 
 export const StackIcon = styled.div`
-  position: relative;
   width: 70px;
   max-width: 90px;
   min-height: 70px;
@@ -205,8 +204,8 @@ export const Icon = styled.img`
   }
 
   @media only screen and (max-width: 460px) {
-    width: 33px;
-    height: 33px;
+    width: 28px;
+    height: 28px;
   }
 `;
 
@@ -246,7 +245,7 @@ export const LaptopImage = styled.img`
   }
 
   @media only screen and (max-width: 460px) {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
   }
 `;

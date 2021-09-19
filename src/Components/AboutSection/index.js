@@ -32,7 +32,8 @@ const About = () => {
               <P>
                 Hi, I’m Rohan, a 21 years young self-taught Frontend Developer,
                 UI/UX Designer, Photographer from Maharashtra, India. I enjoy
-                creating and building clean, modern & user-friendly websites.
+                creating and building clean, modern & user-friendly Websites and
+                Web-Applications.
               </P>
               <P>
                 Have a look at my projects, skills or just connect with me on
@@ -41,13 +42,18 @@ const About = () => {
               </P>
             </Info>
             <SocialSection>
-              <SocialIconBox fill="blue" rounded={false} dark={false}>
+              <SocialIconBox to="#" fill="blue" rounded={false} dark={false}>
                 <FaFacebookF />
               </SocialIconBox>
-              <SocialIconBox fill="#4AA7EA" rounded={false} dark={false}>
+              <SocialIconBox to="#" fill="#4AA7EA" rounded={false} dark={false}>
                 <FaLinkedinIn />
               </SocialIconBox>
-              <SocialIconBox fill="red" rounded={false} dark={false}>
+              <SocialIconBox
+                to="/contact"
+                fill="red"
+                rounded={false}
+                dark={false}
+              >
                 <HiOutlineMail />
               </SocialIconBox>
             </SocialSection>

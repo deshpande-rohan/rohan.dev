@@ -39,18 +39,18 @@ const Footer = () => {
             </LinkSection>
             <LinkSection>
               <SectionTitle>Made With</SectionTitle>
-              <Link>React</Link>
-              <Link>Styled Components</Link>
-              <Link>React Router</Link>
-              <Link>React Scroll</Link>
-              <Link>Vercel</Link>
+              <Link to="#">React</Link>
+              <Link to="#">Styled Components</Link>
+              <Link to="#">React Router</Link>
+              <Link to="#">React Scroll</Link>
+              <Link to="#">Vercel</Link>
             </LinkSection>
             <LinkSection>
               <SectionTitle>Resources</SectionTitle>
-              <Link>Figma</Link>
-              <Link>React Icons</Link>
-              <Link>React Typing</Link>
-              <Link>cssgradient.io</Link>
+              <Link to="#">Figma</Link>
+              <Link to="#">React Icons</Link>
+              <Link to="#">React Typing</Link>
+              <Link to="#">cssgradient.io</Link>
             </LinkSection>
             <LinkSection>
               <SectionTitle>Note</SectionTitle>

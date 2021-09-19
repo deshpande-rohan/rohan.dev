@@ -1,4 +1,5 @@
 import React from "react";
+import { MdCancel } from "react-icons/md";
 import {
   FormContainer,
   FormWrapper,
@@ -7,10 +8,15 @@ import {
   Input,
   TextArea,
   Submit,
+  Message,
 } from "./FormElements";
 import emailjs from "emailjs-com";
+import { useState } from "react";
 
 const Form = () => {
+  const [message, setMessage] = useState("");
+  const [visible, setVisible] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -23,20 +29,28 @@ const Form = () => {
       )
       .then(
         (result) => {
-          alert(result.text);
+          setMessage("Message Sent");
+          setVisible(true);
+          e.target.reset();
         },
         (error) => {
-          alert(error.text);
+          setMessage("Something went wrong !");
+          setVisible(true);
+          e.target.reset();
         }
       );
-
-    e.target.reset();
   };
 
   return (
     <FormContainer>
       <FormWrapper>
         <SimpleForm onSubmit={sendEmail}>
+          {visible && (
+            <Message>
+              {message}{" "}
+              <MdCancel className="cancel" onClick={() => setVisible(false)} />
+            </Message>
+          )}
           <div>
             <Label htmlFor="name">Your Name</Label>
             <Input
@@ -65,6 +79,7 @@ const Form = () => {
               rows="5"
               name="message"
               cols="32"
+              maxLength="140"
               placeholder="Enter Your Message"
             ></TextArea>
           </div>

@@ -1,12 +1,12 @@
-import React from 'react'
-import Form from '../Components/Form'
+import React from "react";
+import Form from "../Components/Form";
 
 const Message = () => {
-    return (
-        <>
-            <Form />
-        </>
-    );
-}
+  return (
+    <>
+      <Form />
+    </>
+  );
+};
 
-export default Message
+export default Message;

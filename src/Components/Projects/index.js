@@ -45,7 +45,7 @@ const Projects = () => {
                     </StackItem>
                   ))}
                 </ProjectStack>
-                <ProjectLink href="#">
+                <ProjectLink href={item.projectLink}>
                   Live Project{" "}
                   <BsArrowUpRight
                     style={{

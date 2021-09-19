@@ -42,6 +42,10 @@ export const ProjectsWrapper = styled.div`
   @media screen and (max-width: 860px) {
     padding: 22px 20px;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 20px;
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -76,6 +80,10 @@ export const ProjectCard = styled.div`
     grid-row-gap: 1rem;
     padding: 22px 24px;
   }
+
+  @media only screen and (max-width: 480px) {
+    padding: 22px;
+  }
 `;
 
 export const ProjectInfo = styled.div`
@@ -86,6 +94,10 @@ export const ProjectInfo = styled.div`
 
   @media only screen and (max-width: 860px) {
     margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 18px;
   }
 `;
 
@@ -115,7 +127,7 @@ export const ProjectBio = styled.p`
   margin-bottom: 6px;
 
   @media only screen and (max-width: 480px) {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 4px;
   }
 `;
@@ -127,7 +139,7 @@ export const ProjectDescription = styled.p`
   color: rgb(62, 62, 62);
 
   @media only screen and (max-width: 480px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 `;
 
@@ -167,7 +179,8 @@ export const StackItem = styled.li`
   }
 
   @media only screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 15px;
+    padding: 2px 6px;
   }
 `;
 
@@ -179,12 +192,18 @@ export const ProjectLink = styled.a`
   padding: 6px 18px;
   color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
-  background: #000;
+  background: #101010;
   text-align: center;
   border-radius: 100px;
+  transition: 0.2s ease;
 
   @media only screen and (max-width: 480px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 6px 16px;
+  }
+
+  &:hover {
+    background: #000;
   }
 `;
 
@@ -211,12 +230,10 @@ export const Image = styled.img`
   @media only screen and (max-width: 560px) {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 `;
 
 export const Text = styled.p`
-  // display: inline-block;
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 2.8rem;

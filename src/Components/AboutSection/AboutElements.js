@@ -107,8 +107,9 @@ export const P = styled.p`
   }
 
   @media only screen and (max-width: 440px) {
-    font-size: 15px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 23px;
+    word-break: break-word;
   }
 `;
 

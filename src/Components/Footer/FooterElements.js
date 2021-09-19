@@ -52,6 +52,7 @@ export const FooterHead = styled.div`
   }
 
   @media only screen and (max-width: 520px) {
+    margin-top: 1rem;
     margin-bottom: 1.8rem;
   }
 `;
@@ -133,11 +134,11 @@ export const Link = styled(LinkScroll)`
     display: block;
     width: 0;
     height: 2px;
-    background: rgb(44, 136, 191);
+    background: rgb(22, 213, 188);
     background: linear-gradient(
       90deg,
-      rgba(44, 136, 191, 0.8575805322128851) 0%,
-      rgba(69, 132, 224, 0.8323704481792717) 100%
+      rgba(22, 213, 188, 0.5326505602240896) 0%,
+      rgba(148, 205, 233, 0.8687850140056023) 100%
     );
     transition: width 0.3s;
   }
@@ -163,11 +164,11 @@ export const LinkRoute = styled(LinkRouter)`
     display: block;
     width: 0;
     height: 2px;
-    background: rgb(86, 215, 101);
+    background: rgb(123, 133, 235);
     background: linear-gradient(
       90deg,
-      rgba(86, 215, 101, 0.908000700280112) 0%,
-      rgba(70, 230, 0, 0.10688025210084029) 100%
+      rgba(123, 133, 235, 0.6895133053221288) 0%,
+      rgba(146, 113, 222, 0.4318102240896359) 100%
     );
     transition: width 0.3s;
   }
