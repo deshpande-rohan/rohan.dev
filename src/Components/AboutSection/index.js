@@ -30,15 +30,15 @@ const About = () => {
             <H2>About me !</H2>
             <Info>
               <P>
-                Hi, I’m Rohan, a 21 years young self-taught Frontend Developer,
+                Hey, I’m Rohan, a 21 years young self-taught Frontend Developer,
                 UI/UX Designer, Photographer from Maharashtra, India. I enjoy
-                creating and building clean, modern & user-friendly Websites and
+                creating & building clean, modern & user-friendly Websites and
                 Web-Applications.
               </P>
               <P>
                 Have a look at my projects, skills or just connect with me on
                 Social Media. I am always excited to build some amazing projects
-                and working together as a team !
+                & working together <span>as a team !</span>
               </P>
             </Info>
             <SocialSection>

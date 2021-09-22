@@ -81,7 +81,7 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  width: 100%;
+  width: 90%;
   padding: 10px 12px;
   border: none;
   outline: none;
@@ -92,11 +92,11 @@ export const Input = styled.input`
   transition: border-left 0.2s ease;
 
   &:focus {
-    border-left: 2px solid red;
+    border-left: 2px solid #fa8072;
   }
 
   &:valid {
-    border-left: 2px solid green;
+    border-left: 2px solid #4fffb0;
   }
 
   @media only screen and (max-width: 500px) {

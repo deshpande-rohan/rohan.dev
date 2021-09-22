@@ -97,6 +97,10 @@ export const P = styled.p`
   color: #000000;
   margin-bottom: 8px;
 
+  & span {
+    white-space: nowrap;
+  }
+
   @media only screen and (max-width: 890px) {
     text-align: center;
   }

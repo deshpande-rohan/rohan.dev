@@ -126,9 +126,12 @@ export const StackIcon = styled.div`
   color: #fb5e06;
   background: #171717;
   border-radius: 100%;
-  box-shadow: 4px 4px 10px #000000, -4px -4px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.06),
+    4px 4px 8px rgba(0, 0, 0, 0.5), inset -3px -3px 8px rgba(0, 0, 0, 0.31),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.04);
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.49, 0.98);
+  backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
