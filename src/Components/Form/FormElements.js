@@ -55,7 +55,6 @@ export const SimpleForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   padding: 24px 30px;
   position: relative;
 
@@ -81,7 +80,7 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  width: 90%;
+  width: 100%;
   padding: 10px 12px;
   border: none;
   outline: none;
