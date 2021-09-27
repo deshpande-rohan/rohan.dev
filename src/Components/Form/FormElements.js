@@ -25,6 +25,11 @@ export const FormWrapper = styled.div`
     width: 340px;
     height: 460px;
   }
+
+  @media only screen and (max-width: 380px) {
+    width: 320px;
+    height: 460px;
+  }
 `;
 
 export const Message = styled.p`
@@ -32,7 +37,7 @@ export const Message = styled.p`
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-  background: #b9d9eb;
+  background: ${({ error }) => (error ? "#fd5c63" : "#89CFF0")};
   padding: 6px 20px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -64,6 +69,10 @@ export const SimpleForm = styled.form`
 
   @media only screen and (max-width: 500px) {
     padding: 18px 24px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    padding: 16px 20px;
   }
 `;
 

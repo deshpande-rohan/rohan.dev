@@ -40,7 +40,7 @@ export const FooterHead = styled.div`
   & > img {
     width: 44px;
     height: 44px;
-    margin: 2px 10px 2px 0;
+    margin: 2px 12px 2px 0;
     cursor: pointer;
 
     @media only screen and (max-width: 520px) {
@@ -58,11 +58,13 @@ export const FooterHead = styled.div`
 `;
 
 export const Name = styled.h2`
-  font-size: 1.75rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
   font-weight: 500;
-  letter-spacing: 1.01px;
+  letter-spacing: 0.8px;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0.65);
+  transform: translateY(10px);
 
   @media only screen and (max-width: 520px) {
     font-size: 1.2rem;

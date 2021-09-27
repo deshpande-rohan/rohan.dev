@@ -16,6 +16,7 @@ import { useState } from "react";
 const Form = () => {
   const [message, setMessage] = useState("");
   const [visible, setVisible] = useState(false);
+  const [error, setError] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -36,6 +37,7 @@ const Form = () => {
         (error) => {
           setMessage("Something went wrong !");
           setVisible(true);
+          setError(true);
           e.target.reset();
         }
       );
@@ -46,7 +48,7 @@ const Form = () => {
       <FormWrapper>
         <SimpleForm onSubmit={sendEmail}>
           {visible && (
-            <Message>
+            <Message error={error}>
               {message}{" "}
               <MdCancel className="cancel" onClick={() => setVisible(false)} />
             </Message>
