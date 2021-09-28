@@ -9,3 +9,18 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  background-color: #000;
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    max-width: 100%;
+  }
+}

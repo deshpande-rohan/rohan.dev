@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
             <NameIcon src={Name} />
           </NavHeader>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            <FaBars style={{ opacity: "0.7" }} />
           </MobileIcon>
           <NavMenu>
             <NavItem>

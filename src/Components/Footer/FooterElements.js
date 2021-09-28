@@ -46,7 +46,7 @@ export const FooterHead = styled.div`
     @media only screen and (max-width: 520px) {
       width: 34px;
       height: 34px;
-      transform: translateY(-4px);
+      transform: translateY(-6px);
       margin: 2px 6px 2px 0;
     }
   }
@@ -68,6 +68,7 @@ export const Name = styled.h2`
 
   @media only screen and (max-width: 520px) {
     font-size: 1.2rem;
+    transform: translateY(5px);
   }
 `;
 

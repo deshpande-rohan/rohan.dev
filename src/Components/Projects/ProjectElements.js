@@ -166,7 +166,7 @@ export const StackItem = styled.li`
   background: rgba(217, 120, 251, 0.15);
   border-radius: 8px;
   cursor: pointer;
-  transition: box-shadow 0.3s, transform 0.2s ease-in;
+  transition: 0.3s ease-in;
 
   &:not(:last-child) {
     margin-right: 6px;
@@ -176,6 +176,7 @@ export const StackItem = styled.li`
     transform: translateY(-2px);
     box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.19),
       2px 2px 4px rgba(0, 0, 0, 0.15);
+    background: rgba(217, 120, 251, 0.25);
   }
 
   @media only screen and (max-width: 480px) {
