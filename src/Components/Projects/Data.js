@@ -24,4 +24,20 @@ export const Data = [
     imageName: "project-2.png",
     projectLink: "https://dollar-five.vercel.app/",
   },
+  {
+    title: "Online Candy Shop",
+    bio: "A small and simple online candy shop",
+    description:
+      "A small online store specifically made for candies. This web-app focuses on commerce concepts and you can add candies to your cart and can purchase them. It uses stripe payment gateway to handle payments and commerce.js to manage the products, cart feature, shipping addresses and many more.",
+    stack: [
+      "react.js",
+      "react-router",
+      "Material-UI",
+      "Stripe",
+      "Commerce.js",
+      "responsive",
+    ],
+    imageName: "project-3.png",
+    projectLink: "https://candies.netlify.app",
+  },
 ];

@@ -15,24 +15,24 @@ export const Data = [
     iconPath: "js",
   },
   {
+    skillName: "Typescript",
+    isLearning: true,
+    iconPath: "typescript",
+  },
+  {
     skillName: "React",
     isLearning: false,
     iconPath: "react",
   },
   {
     skillName: "Redux",
-    isLearning: true,
+    isLearning: false,
     iconPath: "redux",
   },
   {
-    skillName: "Node.js",
+    skillName: "Next.js",
     isLearning: true,
-    iconPath: "nodejs",
-  },
-  {
-    skillName: "Express",
-    isLearning: true,
-    iconPath: "express",
+    iconPath: "nextjs",
   },
   {
     skillName: "SASS / SCSS",
